@@ -245,3 +245,113 @@
               <h4>Cellulare / WhatsApp</h4>
               <a href="tel:+393388421624">338 8421624</a>
             </div>
+                      </div>
+          <div class="contatto-item">
+            <div class="contatto-icon">&#128231;</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:rudycampari@gmail.com">rudycampari@gmail.com</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/trattoriacampari" target="_blank" class="social-btn">
+              &#128100; Facebook
+            </a>
+            <a href="https://www.instagram.com/rudycampari" target="_blank" class="social-btn">
+              &#128247; Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPPA -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Come raggiungerci</span>
+        <h2>Siamo a Casaletto Ceredano</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="mappa-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.0!2d9.6745!3d45.3456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4780f0b0b0b0b0b0%3A0x0!2sVia+Madonna+delle+Fontane+29%2C+26010+Casaletto+Ceredano+CR!5e0!3m2!1sit!2sit!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mappa Antica Trattoria Campari">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>&#127863; Antica Trattoria Campari</h3>
+          <p>Dal 1893 nel cuore di Casaletto Ceredano.<br>Una storia di famiglia, una cucina di tradizione.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <ul>
+            ><a href="#storia">La Storia</a></li>
+            ><a href="#cucina">La Cucina</a></li>
+            ><a href="menu.html">Menu</a></li>
+            ><a href="#orari">Orari</a></li>
+            ><a href="#contatti">Prenota</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <p>&#128205; Via Madonna delle Fontane 29<br>26010 Casaletto Ceredano (CR)</p>
+          <p style="margin-top:0.5rem;">&#128222; <a href="tel:+390373262310" style="color:#b89a7a;">0373 262310</a></p>
+          <p>&#128241; <a href="tel:+393388421624" style="color:#b89a7a;">338 8421624</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Antica Trattoria Campari &middot; Via Madonna delle Fontane 29, Casaletto Ceredano (CR) &middot; P.IVA: Farea Rodolfo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    mobileClose.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(59,35,20,1)';
+      } else {
+        navbar.style.background = 'rgba(59,35,20,0.97)';
+      }
+    });
+  </script>
+
+</body>
+</html>
