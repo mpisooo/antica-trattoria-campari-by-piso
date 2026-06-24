@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Menù dell'Antica Trattoria Campari di Casaletto Ceredano: tortelli dolci cremaschi, piatti della tradizione lombarda, antipasti, primi, secondi e dolci." />
+  <title>Menù | Antica Trattoria Campari</title>
+  " />
+  /svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="logo-icon">🍷</div>
+      <span>Antica Trattoria Campari</span>
+    </div>
+    <ul class="navbar-menu">
+      ><a href="index.html#storia">La Storia</a></li>
+      ><a href="index.html#cucina">La Cucina</a></li>
+      ><a href="menu.html">Menù</a></li>
+      ><a href="index.html#orari">Orari</a></li>
+      ><a href="index.html#contatti" class="btn-nav">Prenota</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Apri menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Chiudi menu">✕</button>
+    <a href="index.html#storia" onclick="document.getElementById('mobileMenu').classList.remove('open')">La Storia</a>
+    <a href="index.html#cucina" onclick="document.getElementById('mobileMenu').classList.remove('open')">La Cucina</a>
+    <a href="menu.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Menù</a>
+    <a href="index.html#orari" onclick="document.getElementById('mobileMenu').classList.remove('open')">Orari</a>
+    <a href="index.html#contatti" onclick="document.getElementById('mobileMenu').classList.remove('open')">Prenota</a>
+  </div>
+
+  <!-- MENU HERO -->
+  <header class="menu-hero">
+    <div>
+      <div class="hero-badge">Dal 1893 · Casaletto Ceredano</div>
+      <h1>La Nostra Cucina</h1>
+      <p>Piatti della tradizione cremasca e lombarda, preparati con passione e materie prime locali</p>
+    </div>
+  </header>
+
+  <!-- MENU CONTENT -->
+  <main>
+    <section>
+      <div class="container">
+
+        <!-- Navigazione categorie -->
+        <div class="menu-nav">
+          <button class="menu-nav-btn active" onclick="scrollToSection('antipasti')">🥗 Antipasti</button>
+          <button class="menu-nav-btn" onclick="scrollToSection('primi')">🍝 Primi</button>
+          <button class="menu-nav-btn" onclick="scrollToSection('secondi')">🍖 Secondi</button>
+          <button class="menu-nav-btn" onclick="scrollToSection('contorni')">🥦 Contorni</button>
+          <button class="menu-nav-btn" onclick="scrollToSection('dolci')">🍮 Dolci</button>
+        </div>
+
+        <!-- ANTIPASTI -->
+        <div class="menu-categoria" id="antipasti">
+          <div class="menu-categoria-header">
+            <span class="cat-icon">🥗</span>
+            <h2>Antipasti</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Salame Cremasco</h4>
+                <p>Salame artigianale del territorio, servito con giardiniera e pane casereccio</p>
+              </div>
+              <span class="prezzo">€ 9</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Affettati Misti della Casa</h4>
+                <p>Selezione di salumi locali con mostarda di Cremona e formaggi</p>
+              </div>
+              <span class="prezzo">€ 12</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Salva Cremasco DOP</h4>
+                <p>Formaggio tipico cremasco con scaglie di Bella Lodi e miele d'acacia</p>
+                <span class="badge-spec">Locale</span>
+              </div>
+              <span class="prezzo">€ 8</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Fegato d'Oca al Salto</h4>
+                <p>Specialità della casa, rosolato in burro e salvia con polenta abbrustolita</p>
+                <span class="badge-spec">Specialità</span>
+              </div>
+              <span class="prezzo">€ 11</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Vitello Tonnato</h4>
+                <p>Fesa di vitello al forno affettata sottile con salsa tonnata e capperi</p>
+              </div>
+              <span class="prezzo">€ 10</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Ciccioli d'Oca (Gratù)</h4>
+                <p>Tradizionale antipasto croccante, preparato secondo la ricetta di famiglia</p>
+                <span class="badge-spec">Tradizione</span>
+              </div>
+              <span class="prezzo">€ 8</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRIMI -->
+        <div class="menu-categoria" id="primi">
+          <div class="menu-categoria-header">
+            <span class="cat-icon">🍝</span>
+            <h2>Primi Piatti</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Tortelli Dolci Cremaschi al modo "Campari"</h4>
+                <p>La nostra ricetta storica dal 1893: pasta fresca ripiena di mostaccino, amaretti, uvetta e cedro candito</p>
+                <span class="badge-spec">⭐ Il piatto della casa</span>
+              </div>
+              <span class="prezzo">€ 14</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Ravioli in Brodo di Gallina</h4>
+                <p>Ravioli di magro in brodo di gallina ruspante, come vuole la tradizione cremasca</p>
+                <span class="badge-spec">Tradizione</span>
+              </div>
+              <span class="prezzo">€ 12</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Tagliatelle al Ragù di Cinghiale</h4>
+                <p>Pasta fresca all'uovo con ragù di cinghiale a lunga cottura e aromi di bosco</p>
+              </div>
+              <span class="prezzo">€ 13</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Tagliatelle al Ragù d'Asina</h4>
+                <p>Pasta fresca con ragù d'asina stracotto lentamente con vino rosso e verdure</p>
+              </div>
+              <span class="prezzo">€ 13</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Risotto del Giorno</h4>
+                <p>Preparato con ingredienti di stagione e materie prime del territorio</p>
+                <span class="badge-spec">Stagionale</span>
+              </div>
+              <span class="prezzo">€ 12</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Minestrone della Nonna</h4>
+                <p>Verdure fresche di stagione con legumi e un filo d'olio extravergine</p>
+              </div>
+              <span class="prezzo">€ 9</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECONDI -->
+        <div class="menu-categoria" id="secondi">
+          <div class="menu-categoria-header">
+            <span class="cat-icon">🍖</span>
+            <h2>Secondi Piatti</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Cassoeula d'Oca con la Verza</h4>
+                <p>Il piatto simbolo della cucina cremasca invernale: oca e verza brasate lentamente</p>
+                <span class="badge-spec">⭐ Specialità</span>
+              </div>
+              <span class="prezzo">€ 16</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Brasato di Cinghiale con Polenta</h4>
+                <p>Stracotto di cinghiale con vino rosso, servito con polenta cremosa e gorgonzola dolce</p>
+              </div>
+              <span class="prezzo">€ 16</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Stracotto d'Asina con Polenta</h4>
+                <p>Carne d'asina brasata per ore con patate rosse e polenta gialla</p>
+              </div>
+              <span class="prezzo">€ 15</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Bollito Misto della Tradizione</h4>
+                <p>Gallina lessata, lingua di vitello e biancostato con salsa verde e mostarda di Cremona</p>
+                <span class="badge-spec">Tradizione</span>
+              </div>
+              <span class="prezzo">€ 17</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Pipèto Cremasco</h4>
+                <p>Piatto tipico cremasco preparato con la verza, ricetta contadina della nostra campagna</p>
+                <span class="badge-spec">Locale</span>
+              </div>
+              <span class="prezzo">€ 14</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Tagliata di Manzo</h4>
+                <p>Tagliata di manzo al sangue con rucola, scaglie di Grana Padano e aceto balsamico</p>
+              </div>
+              <span class="prezzo">€ 18</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Bracioline di Petto d'Oca (Brisòle)</h4>
+                <p>Petto d'oca marinato e grigliato, servito con contorno di stagione</p>
+                <span class="badge-spec">Specialità</span>
+              </div>
+              <span class="prezzo">€ 15</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Fesa di Vitello al Forno</h4>
+                <p>Arrosto di vitello con patate e rosmarino, cotto lentamente nel forno a legna</p>
+              </div>
+              <span class="prezzo">€ 14</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTORNI -->
+        <div class="menu-categoria" id="contorni">
+          <div class="menu-categoria-header">
+            <span class="cat-icon">🥦</span>
+            <h2>Contorni</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-info"><h4>Polenta Gialla Cremosa</h4><p>Polenta di mais bianco macinato a pietra</p></div>
+              <span class="prezzo">€ 4</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info"><h4>Verza Brasata</h4><p>Verza cotta lentamente con burro e alloro</p></div>
+              <span class="prezzo">€ 4</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info"><h4>Patate al Forno</h4><p>Patate rosse con rosmarino e olio extravergine</p></div>
+              <span class="prezzo">€ 4</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info"><h4>Insalata Mista di Stagione</h4><p>Verdure fresche dell'orto con olio e aceto</p></div>
+              <span class="prezzo">€ 4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOLCI -->
+        <div class="menu-categoria" id="dol
