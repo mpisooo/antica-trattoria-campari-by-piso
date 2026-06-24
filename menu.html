@@ -269,3 +269,123 @@
 
         <!-- DOLCI -->
         <div class="menu-categoria" id="dol
+
+        <!-- DOLCI -->
+        <div class="menu-categoria" id="dolci">
+          <div class="menu-categoria-header">
+            <span class="cat-icon">🍮</span>
+            <h2>Dolci</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Tiramisù della Casa</h4>
+                <p>Preparato ogni giorno con savoiardi, mascarpone fresco e caffè espresso</p>
+                <span class="badge-spec">Fatto in casa</span>
+              </div>
+              <span class="prezzo">€ 6</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Torta della Nonna</h4>
+                <p>Pasta frolla con crema pasticcera e pinoli, ricetta tradizionale di famiglia</p>
+                <span class="badge-spec">Fatto in casa</span>
+              </div>
+              <span class="prezzo">€ 5</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Panna Cotta al Caramello</h4>
+                <p>Panna cotta artigianale con salsa al caramello e frutti di bosco freschi</p>
+              </div>
+              <span class="prezzo">€ 5</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Sbrisolona Mantovana</h4>
+                <p>Torta sbriciolata con mandorle, servita con un bicchierino di grappa</p>
+              </div>
+              <span class="prezzo">€ 5</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Gelato Artigianale</h4>
+                <p>Due gusti a scelta con panna montata fresca</p>
+              </div>
+              <span class="prezzo">€ 4</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Semifreddo al Torrone</h4>
+                <p>Semifreddo fatto in casa con torrone croccante e salsa al cioccolato fondente</p>
+                <span class="badge-spec">Stagionale</span>
+              </div>
+              <span class="prezzo">€ 6</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTA -->
+        <div style="text-align:center;margin-top:3rem;padding:2rem;background:#fff;border-radius:8px;box-shadow:0 2px 12px rgba(60,30,10,0.08);">
+          <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:#6b4c3b;margin-bottom:0.5rem;">
+            "Il menù varia in base alla stagione e alla disponibilità delle materie prime locali."
+          </p>
+          <p style="font-size:0.88rem;color:#6b4c3b;">Coperto € 2,50 &middot; Prezzi IVA inclusa &middot; Per allergie e intolleranze informare il personale</p>
+          <a href="index.html#contatti" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block;">📞 Prenota il tuo tavolo</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🍷 Antica Trattoria Campari</h3>
+          <p>Dal 1893 nel cuore di Casaletto Ceredano.<br>Una storia di famiglia, una cucina di tradizione.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#storia">La Storia</a></li>
+            <li><a href="index.html#cucina">La Cucina</a></li>
+            <li><a href="menu.html">Menù</a></li>
+            <li><a href="index.html#orari">Orari & Contatti</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <p>📍 Via Madonna delle Fontane 29<br>26010 Casaletto Ceredano (CR)</p>
+          <p style="margin-top:0.5rem;">📞 <a href="tel:+390373262310" style="color:#b89a7a;">0373 262310</a><br>📱 <a href="tel:+393388421624" style="color:#b89a7a;">338 8421624</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Antica Trattoria Campari · Via Madonna delle Fontane 29, Casaletto Ceredano (CR)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileClose.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      document.querySelectorAll('.menu-nav-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
